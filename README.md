@@ -4,12 +4,17 @@ GTBPredict works with a starting csv file, consisting of all the proteins includ
 
 For notebook and dataset installation:
 
-pull dataset:
+Clone dataset:
 
-setup environment:
-cd dataset
+```
+git clone https://github.com/samihennen/GTB_Substrate_Prediction.git
+```
+
+Set up environment:
+```
+cd GTB_Substrate_Prediction
 install yml
-
-Then open the notebook and run from below!
+```
+Then open the notebook and run from below the "Generating Datasets" line!
 
 Most of the data, like the pdb and secondary structure, is pre-computed and already downloaded from the databases, but if you'd like to recompute, just delete everything except the CSV_Data from the Data folder and rerun the notebook. If you'd like to run with your own dataset, simply replace the Data/CSV_Data/start.csv file with your own data (make sure the column formats match).
