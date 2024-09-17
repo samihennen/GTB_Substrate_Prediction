@@ -13,7 +13,7 @@ git clone https://github.com/samihennen/GTB_Substrate_Prediction.git
 Set up environment:
 ```
 cd GTB_Substrate_Prediction
-conda env install --name gtb -f env.yml
+conda env create --file env.yml
 conda install -c conda-forge ipykernel
 ipython kernel install --user --name=gtb
 ```
