@@ -16,6 +16,6 @@ cd GTB_Substrate_Prediction
 conda env create --file env.yml
 ipython kernel install --user --name=gtb
 ```
-Then open the notebook and run from below the "Generating Datasets" line!
+Then open the notebook and run from below the "Generating Datasets" line.
 
 Most of the data, like the pdb and secondary structure, is pre-computed and already downloaded from the databases, but if you'd like to recompute, just delete everything except the CSV_Data from the Data folder and rerun the notebook. If you'd like to run with your own dataset, simply replace the Data/CSV_Data/start.csv file with your own data (make sure the column formats match).
