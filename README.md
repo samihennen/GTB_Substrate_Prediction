@@ -14,6 +14,7 @@ Set up environment:
 ```
 cd GTB_Substrate_Prediction
 conda env create --file env.yml
+conda activate gtb
 conda install -c conda-forge ipykernel
 ipython kernel install --user --name=gtb
 ```
