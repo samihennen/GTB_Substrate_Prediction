@@ -14,6 +14,7 @@ Set up environment:
 ```
 cd GTB_Substrate_Prediction
 conda env install --name gtb -f env.yml
+conda install -c conda-forge ipykernel
 ipython kernel install --user --name=gtb
 ```
 Then open the notebook and run from below the "Generating Datasets" line!
