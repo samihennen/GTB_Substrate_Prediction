@@ -13,7 +13,8 @@ git clone https://github.com/samihennen/GTB_Substrate_Prediction.git
 Set up environment:
 ```
 cd GTB_Substrate_Prediction
-install yml
+conda env install --name gtb -f env.yml
+ipython kernel install --user --name=gtb
 ```
 Then open the notebook and run from below the "Generating Datasets" line!
 
