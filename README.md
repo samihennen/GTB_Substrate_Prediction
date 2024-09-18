@@ -28,7 +28,7 @@ Then open the notebook and run from below the "Generating Datasets" line.
 
 Most of the data, like the pdb and secondary structure, is pre-computed and already downloaded from the databases, but if you'd like to recompute, just delete everything except the CSV_Data from the Data folder and rerun the notebook. If you'd like to run with your own dataset, simply replace the Data/CSV_Data/start.csv file with your own data (make sure the column formats match).
 
-You can also generate predictions by placing a new csv file in Data/CSV_Data and using the bins functions, which will output a graph of the substrate prediction distribution, as well as a csv_ouput file with the predictions. Just place your file names in a list format with the files argument.
+You can also generate predictions after running the model by placing a new csv file in Data/CSV_Data and using the bins functions, which will output a graph of the substrate prediction distribution, as well as a csv_ouput file with the predictions. Just place your file names in a list format with the files argument, as well as specify the trained model you wish to use.
 ```
-bins(df,model=KNN,knn_col,files=[],label_num,delete,to_drop,df_test,verbose=True,model_type="KNN")
+gtb.bins(files=[],model_type="KNN")
 ```
